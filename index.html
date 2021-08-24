@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trilha AngularJS</title>
+        <script type="text/javascript" src="./angular.min.js"></script>
+        <script type="text/javascript">
+            var myApp = angular.module('myApp', []);
+            
+            myApp.controller('meuController', function($scope){
+                $scope.teste = 'Funcionou!! =)';
+            });
+        </script>
+    </head>
+    <body ng-app="myApp">
+        <h1>Primeira aplicação com AngularJS</h1>
+        <div ng-controller="meuController">
+            {{teste}}
+        </div>
+    </body>
+</html>
