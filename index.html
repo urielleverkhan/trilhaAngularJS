@@ -4,18 +4,31 @@
         <meta charset="utf-8">
         <title>Trilha AngularJS</title>
         <script type="text/javascript" src="./angular.min.js"></script>
-        <script type="text/javascript">
-            var myApp = angular.module('myApp', []);
-            
-            myApp.controller('meuController', function($scope){
-                $scope.teste = 'Funcionou!! =)';
-            });
-        </script>
+        <script type="text/javascript" src="./trilhaController.js"></script>
+        <link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
+       
+     
     </head>
-    <body ng-app="myApp">
-        <h1>Primeira aplicação com AngularJS</h1>
-        <div ng-controller="meuController">
-            {{teste}}
-        </div>
+    <body ng-app="trilhaApp" >
+        <div >
+        <header>
+            <h1>Modal com AngularJS</h1>
+        </header>
+        <main>
+            <div ng-controller="TrilhaController">
+                <H1>{{teste}}</H1>
+                <button ng-click="abrir()" class="botao"><p>Clique aqui</p></button>
+                <div class="modal-content">
+                    <div class="modal">
+                        <h1>Feche-me</h1>
+                        <h3 class="prosseguir">Fui nessa</h3>
+                        <button ng-click="fechar()" class="botao"><p>fechar</p></button>
+                        <button ng-click="prosseguir()" class="botao botao-prosseguir"><p>prosseguir</p></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     </body>
 </html>
+
