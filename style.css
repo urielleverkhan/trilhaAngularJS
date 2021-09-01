@@ -9,9 +9,10 @@ body{
     height: 70px;
     border-radius: 10px;
     padding: 0;
+    margin:10px;
 }
 .botao p{
-    font-size: 30px;
+    font-size: 20px;
     margin: 0;
 }
 .modal-content{
@@ -26,8 +27,8 @@ body{
     height: 100%;
 }
 .modal{
-    width: 400px;
-    height: 400px;
+    width: 620px;
+    height: 800px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -37,5 +38,14 @@ body{
     border: 2px solid #000;
 }
 .prosseguir{
+    display: none;
+}
+.imgQuase{
+    display:none;
+}
+.imgParado{
+    display: block;
+}
+.imgParadoAtchim{
     display: none;
 }

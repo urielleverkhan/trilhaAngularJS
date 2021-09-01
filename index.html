@@ -17,13 +17,20 @@
         <main>
             <div ng-controller="TrilhaController">
                 <H1>{{teste}}</H1>
-                <button ng-click="abrir()" class="botao"><p>Clique aqui</p></button>
+                <!-- <button ng-click="abrir()" class="botao"><p>Clique aqui</p></button> -->
+                <img src="./img/parado.gif" class="imgParado" usemap="#Map" />
+                <img src="./img/quase.gif" class="imgQuase" usemap="#Map" />
+                <map name="Map" id="Map">
+                    <area shape="circle" class="map" coords="264,270,50" href="#" alt="Nariz" ng-mouseover="cocegas()" ng-mouseleave="semCocegas()" ng-click="atchim()">
+                  </map>
                 <div class="modal-content">
                     <div class="modal">
-                        <h1>Feche-me</h1>
-                        <h3 class="prosseguir">Fui nessa</h3>
-                        <button ng-click="fechar()" class="botao"><p>fechar</p></button>
-                        <button ng-click="prosseguir()" class="botao botao-prosseguir"><p>prosseguir</p></button>
+                        <h1>ATCHIUUHHUULLLL</h1>
+                        <img src="./img/atchim2.gif" class="atchim" />
+                        <img src="./img/parado.gif" class="imgParadoAtchim" usemap="#Map" />
+                        <h3 class="prosseguir">*Guarda-chuva Aberto</h3>
+                        <button ng-click="fechar()" class="botao"><p>Saude</p></button>
+                        <button ng-click="prosseguir()" class="botao botao-prosseguir"><p>Abrir guarda-chuva</p></button>
                     </div>
                 </div>
             </div>
